@@ -1,0 +1,13 @@
+#Persistent ; (Interception hotkeys do not stop AHK from exiting, so use this)
+#include Lib\AutoHotInterception.ahk
+
+AHI := new AutoHotInterception()
+
+keyboardId := AHI.GetKeyboardId(0x1A2C, 0x95F6)
+AHI.SubscriveKeyboard(keyboardId, true, Func("KeyEvent"))
+
+***
+KeyEvent(code, state) {
+	-script-
+}
+***
