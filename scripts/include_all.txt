@@ -3,7 +3,7 @@
 
 AHI := new AutoHotInterception()
 
-keyboardId := AHI.GetKeyboardId(0x1A2C, 0x95F6)
+keyboardId := AHI.GetKeyboardId(0x1EA7, 0x0066)
 AHI.SubscriveKeyboard(keyboardId, true, Func("KeyEvent"))
 
 ***
