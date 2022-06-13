@@ -9,8 +9,20 @@ return
 
 KeyEvent(code, state){
 
-if (state=1) & (code=71){
+if (state=1) & (code=325){
 	Send, ^r
+}
+
+if (state=1) & (code=309){
+	Send, ^t
+}
+
+if (state=1) & (code=55){
+	Send, ^w
+}
+
+if (state=1) & (code=74){
+	Send, ^+t
 }
 
 }
